@@ -13,7 +13,8 @@ function DoThing(n) {
   return result; 
 } 
 function fetchData() { 
-  const url = "http://localhost:8080"; 
+  // const url = "http://localhost:8080";
+  const url =process.env.API_URL
   console.log("fetching from " + url + " with key " + apiKey); 
   return { ok: true }; 
 
